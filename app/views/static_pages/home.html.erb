@@ -1,40 +1,13 @@
-<p id="organizer">Organized by <a href="http://www.ziggeo.com"><%= image_tag("ziggeo-logo.png", :id => "ziggeo-logo-1") %></a></p>
+<div id="organizer">
+	<p>Organized by &nbsp<a href="http://www.ziggeo.com"><%= image_tag("ziggeo-logo.png", :id => "ziggeo-logo-1") %></a></p>
+</div>
 
 <h1 id="title">Video Hack Day<br>
 	NYC
 </h1>
 
-// <script>
-// var vid = document.getElementById("bgvid");
-// var pauseButton = document.querySelector("#interested button");
+<div id="interested">
+	<p>May 9, 2015 &nbsp <button><%= link_to "Interested?", signup_path %></button></p>
+</div>
 
-// function vidFade() {
-// 	vid.classList.add("stopfade");
-// 	}
-
-// 	vid.addEventListener('ended', function()
-// 	{
-// 	// only functional if "loop" is removed 
-// 	vid.pause();
-// 	// to capture IE10
-// 	vidFade();
-// }); 
-
-
-// pauseButton.addEventListener("click", function() {
-// 	vid.classList.toggle("stopfade");
-// 	if (vid.paused) {
-// 		vid.play();
-// 		pauseButton.innerHTML = "Pause";
-// 	} else {
-// 		vid.pause();
-// 		pauseButton.innerHTML = "Paused";
-// 	}
-// });
-// </script>
-
-
-		<div id="interested">
-			<p>May 9, 2015<button>Interested?</button></p>
-					
-				</div>
+<%= video_tag(["full.webmhd.webm"], :size => "320x240", :controls => false, :autoplay => true, :autobuffer => true, :loop => true) %>

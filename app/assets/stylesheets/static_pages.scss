@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	margin: 0;
-	background: #000; 
+	margin: 0; 
+	color: white;
 }
 
 video { 
@@ -24,11 +24,17 @@ video {
 #ziggeo-logo-1 {
 	width: 8rem;
 	height: 2.5rem;
+	margin-top: -1rem;
+
 }
 
 #organizer {
+	font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+	font-weight:100;
+	font-size: 2rem;
 	color: white;
 	text-shadow: 1px 1px black;
+
 }
 
 .stopfade { 
@@ -36,14 +42,14 @@ video {
 }
 
 #interested { 
-	font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+	font-family: "gibson regular", arial;
 	font-weight:100; 
 	background: rgba(0,0,0,0.3);
 	color: white;
 	padding: 2rem;
 	width: 33%;
 	margin: 0 auto;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	text-align: center;
 	float: left;
 }
@@ -76,14 +82,14 @@ video {
 	background: rgba(0,0,0,0.5);
 }
 
-/*a {
+a {
 	display: inline-block;
 	color: #fff;
 	text-decoration: none;
-	background:rgba(0,0,0,0.5);
+/*	background:rgba(0,0,0,0.5);
 	padding: .5rem;
-	transition: .6s background; 
-}*/
+	transition: .6s background; */
+}
 
 /*a:hover{
 	background:rgba(0,0,0,0.9);
@@ -96,4 +102,22 @@ video {
 @media screen and (max-device-width: 800px) {
 	html { background: url('/assets/images/video.png') #000 no-repeat center center fixed; }
 	#bgvid { display: none; }
+}
+
+.embed-container {
+	position: relative;
+	height: 0;
+	background-color: white;
+}
+
+.ratio-16-9 {
+	padding-bottom: 56.25%;/* 9/16*100 */
+}
+
+.ratio-4-3 {
+	padding-bottom: 75%;/* 3/4*100 */
+}
+
+.ratio-1-1 {
+	padding-bottom: 100%;/* ... */
 }
