@@ -44,5 +44,8 @@ group :development, :test do
   gem 'rails_12factor'
   gem 'Ziggeo'
   gem 'bootstrap-sass'
+  gem 'sass'
+  gem 'compass'
+  gem 'compass-rails'
 end
 

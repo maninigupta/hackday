@@ -1,13 +1,119 @@
-<div id="organizer">
-	<p>Organized by &nbsp<a href="http://www.ziggeo.com"><%= image_tag("ziggeo-logo.png", :id => "ziggeo-logo-1") %></a></p>
+<div id="home">
+	<div id="organizer">
+		<p id="organized-by">Presented by &nbsp</p><a href="http://www.ziggeo.com"><%= image_tag("ziggeo-logo.png", :id => "ziggeo-logo-1") %></a>
+	</div>
+
+	<div id="title">
+		<h1>Video Hack Day<br>
+			NYC
+		</h1>
+	</div>
+
+	<div id="stupid">
+		<div id="interested-button"><%= link_to "Interested?", signup_path %></div>
+	</div>
+
+	<div id="date-div">
+		<div id="date">
+			<p>May 9, 2015 <br>
+				General Assembly <br>
+				902 Broadway, New York, NY 10010</p> 
+		</div>
+	</div>
+
+	<div class="bounce">
+	</div>
+
+	<%= video_tag(["full.webmhd.webm"], :size => "320x240", :controls => false, :autoplay => true, :autobuffer => true, :loop => true) %>
 </div>
 
-<h1 id="title">Video Hack Day<br>
-	NYC
-</h1>
-
-<div id="interested">
-	<p>May 9, 2015 &nbsp <button><%= link_to "Interested?", signup_path %></button></p>
+<div id="about">
+	<h1>2015 is the year of the video!</h1>
+	<p>Video APIs have the power to change the way we communicate forever, allowing us to capture, save, and share our lives in ways never before possible.</p>
+	<p>With Video Hack Day, we seek to push innovation in the online video space even further, by bringing together brilliant Video APIs and the best developers and designers in New York City!</p>
+	<div id="about_list">
+		<ul>
+			<li>Who: Our friends, old and new, in the online video space</li>
+			<li>What: NYC's premiere event for video hacking awesomeness</li>
+			<li>When & Where: The weekend of May 9th at General Assembly's beautiful Manhattan campus</li>
+			<li>Why: To bring together innovative companies and creative minds to push the boundaries of the online video space!</li>
+		</ul>
+	</div>
 </div>
 
-<%= video_tag(["full.webmhd.webm"], :size => "320x240", :controls => false, :autoplay => true, :autobuffer => true, :loop => true) %>
+<div id="sponsors">
+	<div id="sponsor_content">
+		<h1>Sponsors</h1>
+		<div id="sponsor_left" class="sponsor">
+			<img src="images/fake_logo.png">
+			<img src="images/fake_logo.png">
+			<img src="images/fake_logo.png">
+			<img src="images/fake_logo.png">
+			<img src="images/fake_logo.png">
+		</div>
+		<div id="sponsor_right" class="sponsor">
+			<img src="images/fake_logo.png">
+			<img src="images/fake_logo.png">
+			<img src="images/fake_logo.png">
+			<img src="images/fake_logo.png">
+			<img src="images/fake_logo.png">
+		</div>
+	</div>
+</div>
+
+<div id="prizes">
+	<div id="main_prizes">
+		<h1>Main Prizes</h1>
+		<h2>1st Place</h2>
+		<p>prize description</p>
+		<h2>2nd Place</h2>
+		<p>prize description</p>
+		<h2>3rd Place</h2>
+		<p>prize description</p>
+		<h2>Crowd Favorite</h2>
+		<p>prize description</p>
+	</div>
+	<div id="api_prizes">
+		<h1>API Prizes</h1>
+		<div id="prize_left" class="api_prize">
+			<img src="images/fake_logo.png">
+			<p>prize description</p>
+			<img src="images/fake_logo.png">
+			<p>prize description</p>
+			<img src="images/fake_logo.png">
+			<p>prize description</p>
+			<img src="images/fake_logo.png">
+			<p>prize description</p>
+		</div>
+		<div id="prize_right" class="api_prize">
+			<img src="images/fake_logo.png">
+			<p>prize description</p>
+			<img src="images/fake_logo.png">
+			<p>prize description</p>
+			<img src="images/fake_logo.png">
+			<p>prize description</p>
+			<img src="images/fake_logo.png">
+			<p>prize description</p>
+		</div>
+	</div>
+</div>
+
+<div id="schedule">
+	<div id="schedule_content">
+		<h1>Schedule</h1>
+		<p><strong>9:00am</strong><br>Doors Open / Breakfast</p>
+		<p><strong>9:45am</strong><br>Keynote Speech</p>
+		<p><strong>10:00am</strong><br>API Presentations</p>
+		<p><strong>11:00am</strong><br>Start Hacking!</p>
+		<p><strong>12:30pm</strong><br>Lunch</p>
+		<p><strong>6:30pm</strong><br>Dinner</p>
+		<p><strong>9pm</strong><br>Hack Submission Deadline</p>
+		<p><strong>9:30pm</strong><br>Hack Demos</p>
+		<p><strong>10:30pm</strong><br>Awards</p>
+		<p><strong>11:30pm</strong><br>Afterparty!</p>
+	</div>
+</div>
+
+<div id="directions">
+	<img src="images/map.png">
+</div>
