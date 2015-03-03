@@ -8,18 +8,35 @@
 	    <%= f.label :email %>
 	    <%= f.email_field :email, :placeholder => "email" %>
 
-	    <%= f.hidden_field :name, :value => "videotoken" %>
-
 	    <br>
 	    <br>
 
-	    <ziggeo ziggeo-form_accept="#myform" ziggeo-input_bind="videotoken" ziggeo-width=320 ziggeo-height=240>
+	    <ziggeo ziggeo-form_accept="#myform" ziggeo-input_bind="user[videotoken]" ziggeo-expiration_days=270 ziggeo-width=320 ziggeo-height=240>
 			</ziggeo>
 
 			<br>
 
-	    <%= f.submit "Sign me up", class: "btn btn-primary" %>
+	    <%= f.submit "Sign me up", class: "btn btn-primary", id: "submit-video" %>
 	  <% end %>
 	 </div>
 	</div>
 </div>
+
+<script type="text/javascript">
+// 	ZiggeoApi.Events.on("submitted", function (data) {
+// 	alert("Submitted a new video with token '" + data.video.token + "'!");
+// 	console.log("Submitted a new video with token '" + data.video.token + "'!");
+// 	videotoken = data.video.token;
+// 	videotoken.toJSON();
+// 	createVideotoken(videotoken);
+// });
+
+// 	function createVideotoken(token) {
+// 		$.ajax({
+// 			url: '/users/',
+// 			method: 'POST',
+// 			data: $('#myform').serialize()
+// 		});
+// 	}
+
+</script>
