@@ -41,11 +41,15 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'rails_12factor'
   gem 'Ziggeo'
   gem 'bootstrap-sass'
   gem 'sass'
   gem 'compass'
   gem 'compass-rails'
 end
+
+group :production do
+    gem 'rails_12factor'
+end
+
 
