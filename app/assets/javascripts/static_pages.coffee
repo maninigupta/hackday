@@ -16,22 +16,22 @@ $ ->
 
 
 	# Participants Page
-	if window.location.pathname == "/participants"
+	else if window.location.pathname == "/participants"
 		$('#participants-link').addClass('active')
 		setRecorderSlideDownEvent()
 
 	# Sponsors Page
-	if window.location.pathname == "/sponsors"
+	else if window.location.pathname == "/sponsors"
 		$('#sponsors-link').addClass('active')
 		setRecorderSlideDownEvent()
 
 	# Judges Page
-	if window.location.pathname == "/judges"
+	else if window.location.pathname == "/judges"
 		$('#judges-link').addClass('active')
 		setRecorderSlideDownEvent()
 
 
 setRecorderSlideDownEvent = () ->
-	$('#participants').on 'click', '#show-video-recorder', (e) ->
+	$('#show-video-recorder').on 'click', (e) ->
 		$('#new-participant-form').slideDown(300)
 		$(e.target).hide()
