@@ -8,7 +8,7 @@ $ ->
 	if window.location.pathname == "/"
 		$('#home-link').addClass('active')
 		$(window).scroll ->
-			if $(window).scrollTop() > 4000
+			if $(window).scrollTop() + window.innerHeight > $("#directions h1").offset().top + parseInt($("#directions h1").css("padding-top"))
 				$('.bounce').hide()
 			else
 				if !$('.bounce').is(':visible') then $('.bounce').show()
