@@ -1,0 +1,27 @@
+<div class="secondary-page" id="sponsors-page">
+
+	<div class="row" id="sponsor-button-container">
+		<a class="typeform-share button" href="https://manini.typeform.com/to/hC9cUd" data-mode="1" target="_blank">Learn More About Sponsoring!</a>
+		<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+
+	</div>
+	
+	<h1 class="text-center">Meet Our Sponsors</h1>
+
+	<div id="new-participant" class="text-center">
+
+		<p>Are you a sponsor? Introduce yourself by recording a video here!</p>
+
+		<button class="btn btn-primary" id="show-video-recorder">Record A Video</button>
+
+		<div class="hide-first" id="new-participant-form">
+			<%= render 'form' %>
+		</div>
+
+	</div>
+
+	<div id="all-sponsors">
+		<%= render 'all_users' %>
+	</div>
+
+</div>

@@ -2,3 +2,36 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
+$ ->
+	
+	# Home Page
+	if window.location.pathname == "/"
+		$('#home-link').addClass('active')
+		$(window).scroll ->
+			if $(window).scrollTop() > 4550
+				$('.bounce').hide()
+			else
+				if !$('.bounce').is(':visible') then $('.bounce').show()
+
+
+
+	# Participants Page
+	if window.location.pathname == "/participants"
+		$('#participants-link').addClass('active')
+		setRecorderSlideDownEvent()
+
+	# Sponsors Page
+	if window.location.pathname == "/sponsors"
+		$('#sponsors-link').addClass('active')
+		setRecorderSlideDownEvent()
+
+	# Judges Page
+	if window.location.pathname == "/judges"
+		$('#judges-link').addClass('active')
+		setRecorderSlideDownEvent()
+
+
+setRecorderSlideDownEvent = () ->
+	$('#participants').on 'click', '#show-video-recorder', (e) ->
+		$('#new-participant-form').slideDown(300)
+		$(e.target).hide()

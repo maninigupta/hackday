@@ -1,0 +1,9 @@
+<% @users.each do |user| %>
+  <div class="col-xs-12 col-md-4">
+  	<div class="ziggeo-container">
+  		<ziggeo ziggeo-video="<%= user.videotoken %>" ziggeo-width=320 ziggeo-height=240></ziggeo>
+  	</div>
+
+    <h4 class="text-center username"><%= user.name %></h4>
+  </div>
+<% end %>

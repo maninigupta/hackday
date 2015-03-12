@@ -1,0 +1,21 @@
+<div class="secondary-page" id="judges-page">
+	
+	<h1 class="text-center">Video Hack Day Judges</h1>
+
+	<div id="new-participant" class="text-center">
+
+		<p>Are you a judge? Introduce yourself by recording a video here!</p>
+
+		<button class="btn btn-primary" id="show-video-recorder">Record A Video</button>
+
+		<div class="hide-first" id="new-participant-form">
+			<%= render 'form' %>
+		</div>
+
+	</div>
+
+	<div id="all-judges">
+		<%= render 'all_users' %>
+	</div>
+
+</div>

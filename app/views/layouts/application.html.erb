@@ -18,19 +18,29 @@
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#">Video Hack Day</a>
 			</div>
-			<div>
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#">Participants</a></li>
-					<li><a href="#">Judges</a></li>
-					<li><a href="http://www.eventbrite.com/e/video-hack-day-tickets-16088990604?ref=ebtnebregn">Register</a></li>
-				</ul>
-			</div>
+			<ul class="nav navbar-nav">
+				<li id="home-link">
+					<a href="/">Home</a>
+				</li>
+				<li id="participants-link">
+					<a href="/participants">Participants</a>
+				</li>
+				<li id="sponsors-link">
+					<a href="/sponsors">Sponsors</a>
+				</li>
+				<li id="judges-link">
+					<a href="/judges">Judges</a>
+				</li>
+				<li>
+					<a href="http://www.eventbrite.com/e/video-hack-day-tickets-16088990604?ref=ebtnebregn">Register</a>
+				</li>
+			</ul>
 		</div>
 	</nav>
 
-<%= yield %>
+	<div class="container-fluid">
+		<%= yield %>
+	</div>
 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html> 

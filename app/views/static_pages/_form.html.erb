@@ -1,0 +1,21 @@
+<%= form_for(@new_user, html: {id: "myform"}) do |f| %>
+			   	
+	<div id="form-name">
+	   	<%= f.label :name %>: &nbsp;
+	    <%= f.text_field :name %>
+	</div>
+
+	<div id="form-email">
+	    <%= f.label :email %>: &nbsp;
+	    <%= f.email_field :email %>
+	</div>
+
+	<div id="ziggeo-form-container">
+
+	    <ziggeo ziggeo-form_accept="#myform" ziggeo-input_bind="user[videotoken]" ziggeo-expiration_days=270 ziggeo-width=320 ziggeo-height=240>
+			</ziggeo>
+
+	</div>
+
+	<%= f.submit "Sign me up!", class: "btn btn-primary", id: "submit-video" %>
+<% end %>

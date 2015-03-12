@@ -5,12 +5,45 @@ body {
 	overflow-x: hidden;
 }
 
+.text-center {
+	text-align: center;
+}
+
+.hide-first {
+	display: none;
+}
+
+.navbar.navbar-inverse {
+
+	.navbar-brand {
+
+		margin-left: auto; 
+		margin-right: auto;
+
+	}
+
+	.navbar-nav {
+
+		@media screen and (max-width: 767px) {
+			text-align: center;
+		}
+
+	}
+
+	margin-bottom: 0px !important;
+
+}
+
+
+
 #home {
-	margin: 0; 
 	color: white;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
-	height: 700px;
+	padding: 0px 20px;
+	background: rgba(0, 0, 0, 0.35);
+
+
 }
 
 video { 
@@ -123,9 +156,7 @@ video {
 }
 
 #about {
-	height: 800px;
 	background: rgba(251,251,251,0.9);
-
 }
 
 #about h1, p {
@@ -161,7 +192,6 @@ video {
 }
 
 #sponsors {
-	height: 950px;
 	background: rgba(236,236,236,0.9);
 }
 
@@ -198,7 +228,6 @@ video {
 }
 
 #prizes {
-	height: 1250px;
 	background: rgba(251,251,251,0.95);
 	padding-top: 5rem;
 }
@@ -220,32 +249,18 @@ video {
 }
 
 #api_prizes {
-	width: 30%;
 	margin: 0 auto;
-}
 
-#api_prizes img {
-	display: block;
-	height: 100px;
-	width: 150px;
-	margin: 0 auto;
-}
-
-#prize_left {
-	float: left;
-	display: block;
-	margin: 0 auto;
-}
-
-#prize_right {
-	float: right;
-	display: block;
-	margin: 0 auto;
+	img {
+		display: block;
+		height: 100px;
+		width: 150px;
+		margin: 0 auto;
+	}
 }
 
 #schedule {
 	clear: both;
-	height: 1150px;
 	background: rgba(236,236,236,0.9);
 	padding-top: 5rem;
 }
@@ -274,7 +289,6 @@ strong {
 }
 
 #directions {
-	height: 900px;
 	background: rgba(251,251,251,1);
 	padding-top: 5rem;
 }
@@ -298,4 +312,13 @@ strong {
 	width: 66%;
 	margin: 0 auto;
 	padding-top: 50px;
+}
+
+.map-container {
+	margin: 0px auto 20px auto;
+  	width: 500px;
+}
+
+.deck {
+	width: 90%;
 }

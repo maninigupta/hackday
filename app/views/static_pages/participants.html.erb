@@ -1,0 +1,21 @@
+<div class="secondary-page" id="participants-page">
+	
+	<h1 class="text-center">Video Hack Day Participants</h1>
+
+	<div id="new-participant" class="text-center">
+
+		<p>Want to participate in Video Hack Day? Submit a video now!</p>
+
+		<button class="btn btn-primary" id="show-video-recorder">Record A Video</button>
+
+		<div class="hide-first" id="new-participant-form">
+			<%= render 'form' %>
+		</div>
+
+	</div>
+
+	<div id="all-participants">
+		<%= render 'all_users' %>
+	</div>
+
+</div>

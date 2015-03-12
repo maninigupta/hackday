@@ -1,14 +1,25 @@
 class StaticPagesController < ApplicationController
+  
   def home
   end
 
-  def sponsor_page
+  def participants
+    @users = User.where(kind: 'participant')
+    @new_user = User.new
   end
 
-  def participant_info_page
+  def sponsors
+    @users = User.where(kind: 'sponsor')
+    @new_user = User.new(kind: 'sponsor')
   end
 
-  def videos
+  def judges
+    @users = User.where(kind: 'judge')
+    @new_user = User.new(kind: 'judge')
   end
 
+  def sponsor_deck
+
+  end
+  
 end

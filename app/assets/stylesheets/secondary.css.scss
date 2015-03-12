@@ -1,0 +1,44 @@
+.secondary-page {
+
+	#new-participant {
+
+		min-height: 120px;
+
+		#show-video-recorder {
+			margin: 20px auto;
+		}
+		
+		#new-participant-form {
+
+			margin: 30px auto;
+			height: 350px;
+
+			#ziggeo-form-container {
+				width: 320px;
+	  			margin: 0 auto;
+			}
+
+			#submit-video {
+				 margin: 20px auto 0px auto;
+			}
+			
+		}
+
+		margin-bottom: 20px;
+
+	}
+
+	
+	.ziggeo-container {
+		width: 320px;
+  		margin: 5px auto;
+	}
+
+	#sponsor-button-container {
+		margin: 20px auto;
+
+		a {
+			float: right;
+		}
+	}
+}
