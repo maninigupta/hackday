@@ -10,6 +10,10 @@
 	    <%= f.email_field :email %>
 	</div>
 
+	<div id="form-kind">
+		<%= f.hidden_field :kind %>
+	</div>
+
 	<div id="ziggeo-form-container">
 
 	    <ziggeo ziggeo-form_accept="#myform" ziggeo-input_bind="user[videotoken]" ziggeo-expiration_days=270 ziggeo-width=320 ziggeo-height=240>

@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   def create
    @user = User.new(user_params)
    if @user.save
-     redirect_to users_path
+     redirect_to "/" + @user.kind + "s"
    else
      render 'new'
    end
@@ -23,7 +23,7 @@ class UsersController < ApplicationController
  private
 
 	def user_params
-	 params.require(:user).permit(:name, :email, :videotoken, :password,
+	 params.require(:user).permit(:name, :email, :videotoken, :kind, :password,
 	                              :password_confirmation)
 	end
 
