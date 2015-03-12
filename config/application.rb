@@ -24,7 +24,7 @@ module HackdaySite
     config.active_record.raise_in_transactional_callbacks = true
     config.assets.paths << "#{Rails.root}/app/assets/videos"
 
-    cconfig.serve_static_files = true
+    config.serve_static_files = true
     
   end
 end
