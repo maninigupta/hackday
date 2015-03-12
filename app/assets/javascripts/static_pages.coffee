@@ -8,7 +8,7 @@ $ ->
 	if window.location.pathname == "/"
 		$('#home-link').addClass('active')
 		$(window).scroll ->
-			if $(window).scrollTop() > 4550
+			if $(window).scrollTop() > 4000
 				$('.bounce').hide()
 			else
 				if !$('.bounce').is(':visible') then $('.bounce').show()
