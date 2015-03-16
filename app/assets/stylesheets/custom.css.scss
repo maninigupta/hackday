@@ -62,16 +62,9 @@ video {
 }
 
 /*Organized by text*/
-#organized-by {
-	float: left;
-}
-
-/*Ziggeo logo*/
-#organizer img {
-	width: 11rem;
-	height: 3.5rem;
-	margin-top: 0.1rem;
-}
+// #organized-by {
+// 	float: left;
+// }
 
 /*Organized by Ziggeo div*/
 #organizer {
@@ -79,6 +72,18 @@ video {
 	font-size: 3rem;
 	color: white;
 	padding-top: 4rem;
+	margin-top: 10rem;
+
+	#organized-by a {
+		text-decoration: none;
+		color: white;
+	}
+
+	// img {
+	// 	width: 11rem;
+	// 	height: 3.5rem;
+	// 	margin-top: 0.1rem;
+	// }
 }
 
 /*Video Hack Day NYC div*/
@@ -89,11 +94,10 @@ video {
 	color: white;
 	text-shadow: 1px 1px black;
 	clear: both;
-} 
 
-/*Video Hack Day NYC text*/
-#title h1{
-	font-size: 7rem;
+	h1 {
+		font-size: 7rem;
+	}
 }
 
 /*May 9, 2015 Interested? div*/
@@ -106,10 +110,12 @@ video {
 	clear: both;
 }
 
-.btn.btn-warning {
+.btn.btn-warning, .btn.btn-primary {
 	font-weight: 600;
 	font-size: 18px;
 	margin-left: 2rem;
+	display: block;
+	margin: 2rem auto;
 }
 
 /*#stupid {
@@ -157,39 +163,36 @@ video {
 
 #about {
 	background: rgba(251,251,251,0.9);
-}
-
-#about h1, p {
 	text-align: center;
+
+	h1 {
+		padding-top: 50px;
+		font-size: 50px;
+		font-weight: 900;
+		padding-bottom: 50px;
+	}
+
+	p {
+		width: 75%;
+		margin: 0 auto;
+		padding-bottom: 20px;
+		font-size: 30px;
+		font-weight: 400px;
+	}
+
+ // li {
+	// 	padding-bottom: 20px;
+	// 	font-size: 30px;
+	// 	font-weight: 400px;
+	// }
 }
 
-#about h1 {
-	padding-top: 50px;
-	font-size: 50px;
-	font-weight: 900;
-	padding-bottom: 50px;
-}
 
-#about p {
-	width: 75%;
-	margin: 0 auto;
-	text-align: left;
-	padding-bottom: 20px;
-	font-size: 30px;
-	font-weight: 400px;
-}
-
-#about_list {
-	margin-top: 30px;
-	width: 65%;
-	margin: 0 auto;
-}
-
-#about li {
-	padding-bottom: 20px;
-	font-size: 30px;
-	font-weight: 400px;
-}
+// #about_list {
+// 	margin-top: 30px;
+// 	width: 65%;
+// 	margin: 0 auto;
+// }
 
 #sponsors {
 	background: rgba(236,236,236,0.9);
@@ -240,27 +243,27 @@ video {
 	margin: 0 auto;
 }
 
-#prizes {
-	display: none;
-	background: rgba(251,251,251,0.95);
-	padding-top: 5rem;
-}
-
 #prizes h1, h2, h3, h4 {
 	text-align: center;
 }
 
-#prizes h1 {
-	font-size: 50px;
-	font-weight: 600;
-	padding-top: 30px;
-}
+#prizes {
+	display: none;
+	background: rgba(251,251,251,0.95);
+	padding-top: 5rem;
 
-#prizes h2 {
-	font-size: 30px;
-	font-weight: 400;
-	padding-top: 15px;
-}
+	h1 {
+		font-size: 50px;
+		font-weight: 600;
+		padding-top: 30px;
+	}
+
+	h2 {
+		font-size: 30px;
+		font-weight: 400;
+		padding-top: 15px;
+	}
+} 
 
 #api_prizes {
 	margin: 0 auto;
@@ -277,26 +280,26 @@ video {
 	clear: both;
 	background: rgba(236,236,236,0.9);
 	padding-top: 5rem;
+
+	h1 {
+		font-size: 50px;
+		font-weight: 600;
+		padding-top: 30px;
+	}
+
+	p {
+		font-size: 24px;
+		font-weight: 400;
+		padding-top: 15px;
+	}
+
 }
 
 #schedule_content {
-	text-align: left;
 	margin: 0 auto;
 	width: 35%;
-}
+} 
 
-#schedule h1 {
-	text-align: center;
-	font-size: 50px;
-	font-weight: 600;
-	padding-top: 30px;
-}
-
-#schedule p {
-	font-size: 24px;
-	font-weight: 400;
-	padding-top: 15px;
-}
 
 strong {
 	font-weight: 600;
@@ -305,27 +308,26 @@ strong {
 #directions {
 	background: rgba(251,251,251,1);
 	padding-top: 5rem;
-}
 
-#directions h1{
-	text-align: center;
-	font-size: 50px;
-	font-weight: 600;
-	margin-top: 0;
-	padding-top: 30px;
-}
+	h1 {
+		font-size: 50px;
+		font-weight: 600;
+		margin-top: 0;
+		padding-top: 30px;
+	}
 
-#directions p {
-	font-size: 24px;
-	font-weight: 400;
-	padding-top: 15px;
-}
+	p {
+		font-size: 24px;
+		font-weight: 400;
+		padding-top: 15px;
+	}
 
-#directions img {
-	display: block;
-	width: 66%;
-	margin: 0 auto;
-	padding-top: 50px;
+	img {
+		display: block;
+		width: 66%;
+		margin: 0 auto;
+		padding-top: 50px;
+	}
 }
 
 .map-container {
@@ -337,6 +339,6 @@ strong {
 	width: 90%;
 }
 
-#judges-page, #participants-page {
+#judges-page, #participants-page, #sponsor-deck {
 	margin-top: 79px;
 }

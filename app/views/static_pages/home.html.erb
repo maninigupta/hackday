@@ -1,8 +1,5 @@
 	
 <div class="row" id="home">
-	<div id="organizer">
-		<p id="organized-by">Organized by &nbsp</p><a href="http://www.ziggeo.com"><%= image_tag("ziggeo-logo.png", :id => "ziggeo-logo") %></a>
-	</div>
 
 	<div id="title">
 		<h1>Video Hack Day<br>
@@ -13,16 +10,28 @@
 <!-- 	<div id="stupid">
 		<div id="interested-button"><%= link_to "Interested?", signup_path %></div>
 	</div> -->
+	<div class="col-xs-12 col-md-6" class="text-center">
+		<a id="btn-left" class="btn btn-warning" href="https://www.eventbrite.com/e/video-hack-day-tickets-16164233658">Register to Attend Here</a>
+	</div>
 
-	<a class="btn btn-warning" href="http://www.eventbrite.com/e/video-hack-day-tickets-16088990604?ref=ebtnebregn" target="_blank">Interested?</a>
+	<div class="col-xs-12 col-md-6" class="text-center">
+		<a id="btn-right" class="btn btn-primary" class="typeform-share button" href="https://manini.typeform.com/to/hC9cUd" data-mode="1" target="_blank">Learn More About Sponsoring</a>
+		<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
+	</div>
 
 
-	<div id="date-div">
+<!-- 	<div id="date-div">
 		<div id="date">
 			<p>May 9, 2015 <br>
 				General Assembly <br>
 				902 Broadway, New York, NY 10010</p> 
 		</div>
+	</div> -->
+
+	<div id="organizer" class="text-center">
+		<!-- <p id="organized-by">Organized by &nbsp</p><a href="http://www.ziggeo.com"><%= image_tag("ziggeo-logo.png", :id => "ziggeo-logo") %></a> -->
+
+		<p id="organized-by">Organized by <a href="http://www.ziggeo.com">Ziggeo</a></p>
 	</div>
 
 	<div class="bounce">
@@ -36,20 +45,23 @@
 </div>
 
 <div class="row" id="about">
-	<h1>2015 is the year of the video!</h1>
+	<h1>2015 is the year of the video.</h1>
+	<p class="text-center">Major social networks are prioritizing video.</p>
+	<p>There's an escalating battle for video supremacy.</p>
+	<p>And exciting new video APIs are being released.</p>
 	
-	<p>Video APIs have the power to change the way we communicate forever, allowing us to capture, save, and share our lives in ways never before possible.</p>
+<!-- 	<p>Video APIs have the power to change the way we communicate forever, allowing us to capture, save, and share our lives in ways never before possible.</p>
 	
-	<p>With Video Hack Day, we seek to push innovation in the online video space even further, by bringing together brilliant Video APIs and the best developers and designers in New York City!</p>
+	<p>With Video Hack Day, we seek to push innovation in the online video space even further, by bringing together brilliant Video APIs and the best developers and designers in New York City!</p> -->
 
-	<div id="about_list">
+<!-- 	<div id="about_list">
 		<ul>
 			<li>Who: Our friends, old and new, in the online video space</li>
 			<li>What: NYC's premiere event for video hacking awesomeness</li>
 			<li>When & Where: The weekend of May 9th at General Assembly's beautiful Manhattan campus</li>
 			<li>Why: To bring together innovative companies and creative minds to push the boundaries of the online video space!</li>
 		</ul>
-	</div>
+	</div> -->
 	
 </div>
 
@@ -113,7 +125,7 @@
 </div>
 
 <div class="row" id="schedule">
-	<div id="schedule_content">
+	<div id="schedule_content" class="text-center">
 		<h1>Schedule</h1>
 		<p><strong>9:00am</strong><br>Doors Open / Breakfast</p>
 		<p><strong>9:45am</strong><br>Keynote Speech</p>
@@ -129,15 +141,18 @@
 </div>
 
 <div class="row" id="directions">
-	<h1>Location</h1>
-	
-	<p>General Assembly<br>
-		902 Broadway, 4th Floor<br>
-		New York, NY 10010
-	</p>
-	
-	<div class="map-container">
-		<iframe width="500" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=General+Assembly+Broadway&key=AIzaSyBfSye1ShguadJWO3Xbo_0ofaiLe4jaOE4"></iframe>
+	<div class="text-center">
+		<h1>Location</h1>
+		
+		<p>General Assembly<br>
+			902 Broadway<br> 
+			4th Floor<br>
+			New York, NY
+		</p>
+		
+		<div class="map-container">
+			<iframe width="500" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=General+Assembly+Broadway&key=AIzaSyBfSye1ShguadJWO3Xbo_0ofaiLe4jaOE4"></iframe>
+		</div>
 	</div>
 
 </div>
