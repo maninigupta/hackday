@@ -3,7 +3,16 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
+$(document).ready ->
+	$('#fullpage').fullpage({
+		
+	});
 	
+	
+$(document).on('mousewheel') -> 
+	$('.bounce').addClass('hide-me')
+
+
 	# Home Page
 	if window.location.pathname == "/"
 		$('#home-link').addClass('active')

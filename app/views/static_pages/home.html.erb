@@ -1,160 +1,179 @@
-	
-<div class="row" id="home">
+	<div class="video-container">
 
-	<div id="title">
-		<h1>Video Hack Day<br>
-			NYC
-		</h1>
+		<%= video_tag(["full.webmhd.webm", "full.mp4", "full.ogg"], :size => "320x240", :controls => false, :autoplay => true, :autobuffer => true, :loop => true, :poster => "/images/video.png") %>
+
 	</div>
-
-<!-- 	<div id="stupid">
-		<div id="interested-button"><%= link_to "Interested?", signup_path %></div>
-	</div> -->
-	<div class="container">
+<div id="fullpage">	
+	
+	<div class="container section" id="home">
 		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-3 col-md-offset-2" class="text-center">
+			<div class="col-xs-12 col-sm-12 col-md-12" id="title">
+				<h1>Video Hack Day<br>
+				NYC</h1>
+			</div>
+
+			<div class="col-xs-12 col-sm-6 col-md-3 col-md-offset-2 text-center">
 				<button id="btn-left" class="btn btn-warning btn-lg" href="https://www.eventbrite.com/e/video-hack-day-tickets-16164233658">Register to Attend Here</button>
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-3 col-md-offset-2" class="text-center">
+		
+			<div class="col-xs-12 col-sm-6 col-md-3 col-md-offset-2 text-center">
 				<button id="btn-right" class="btn btn-primary btn-lg" class="typeform-share button" href="https://manini.typeform.com/to/hC9cUd" data-mode="1" target="_blank">Learn About Sponsoring</button>
+			</div>
 			<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
-		</div>
-	</div>
-</div>
+		</div><!-- end row -->
 
-<!-- 	<div id="date-div">
-		<div id="date">
-			<p>May 9, 2015 <br>
-				General Assembly <br>
-				902 Broadway, New York, NY 10010</p> 
-		</div>
-	</div> -->
 
-	<div id="organizer" class="text-center">
-		<!-- <p id="organized-by">Organized by &nbsp</p><a href="http://www.ziggeo.com"><%= image_tag("ziggeo-logo.png", :id => "ziggeo-logo") %></a> -->
-
+	<div id="organizer" class="col-xs-12 col-sm-12 col-md-12 text-center">
 		<p id="organized-by">Organized by <a href="http://www.ziggeo.com">Ziggeo</a></p>
 	</div>
 
 	<div class="bounce">
 	</div>
 
-	<div class="video-container">
+</div><!-- end home container -->
 
-		<%= video_tag(["full.webmhd.webm", "full.mp4", "full.ogg"], :size => "320x240", :controls => false, :autoplay => true, :autobuffer => true, :loop => true, :poster => "/images/video.png") %>
 
+<div class="container section" id="about">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+			<h1>2015 is the year of the video.</h1>
+			<p>Major social networks are prioritizing video.</p>
+			<p>There's an escalating battle for video supremacy.</p>
+			<p>And exciting new video APIs are being released.</p>	
+		</div>
 	</div>
-</div>
+</div><!-- end about container -->
 
-<div class="row" id="about">
-	<h1>2015 is the year of the video.</h1>
-	<p class="text-center">Major social networks are prioritizing video.</p>
-	<p>There's an escalating battle for video supremacy.</p>
-	<p>And exciting new video APIs are being released.</p>
-	
-<!-- 	<p>Video APIs have the power to change the way we communicate forever, allowing us to capture, save, and share our lives in ways never before possible.</p>
-	
-	<p>With Video Hack Day, we seek to push innovation in the online video space even further, by bringing together brilliant Video APIs and the best developers and designers in New York City!</p> -->
-
-<!-- 	<div id="about_list">
-		<ul>
-			<li>Who: Our friends, old and new, in the online video space</li>
-			<li>What: NYC's premiere event for video hacking awesomeness</li>
-			<li>When & Where: The weekend of May 9th at General Assembly's beautiful Manhattan campus</li>
-			<li>Why: To bring together innovative companies and creative minds to push the boundaries of the online video space!</li>
-		</ul>
-	</div> -->
-	
-</div>
-
-<div class="row" id="sponsors">
-	<!-- <div id="sponsor_content"> -->
-		<h1>Sponsors</h1>
-
-		<div class="col-xs-12 col-md-6">
-			<img src="images/ziggeo-logo.png">
-			<img id= "google-logo" src="images/google-logo.png">
-			<img src="images/dropbox-logo.png">
+<div class="container section" id="sponsors">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+			<h1>Sponsors</h1>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-2 text-center">
+			<img class="img-responsive" src="images/ziggeo-logo.png">
+			<img class="img-responsive" id= "google-logo" src="images/google-logo.png">
+			<img class="img-responsive" src="images/dropbox-logo.png">
 		</div>
 
-		<div class="col-xs-12 col-md-6">
-			<img id="ga-logo" src="images/ga-logo.png">
-			<img id="vimeo-logo" src="images/vimeo-logo.png">
-			<img src="images/amazon-logo.png">
+		<div class="col-xs-6 col-sm-6 col-md-3 col-md-offset-2 text-center">
+			<img class="img-responsive" id="ga-logo" src="images/ga-logo.png">
+			<img class="img-responsive" id="vimeo-logo" src="images/vimeo-logo.png">
+			<img class="img-responsive" src="images/amazon-logo.png">
 		</div>
 		
-	<!-- </div> -->
-</div>
+	</div><!-- end row -->
+</div><!-- end sponser container -->
 
-<div class="row" id="prizes">
-	<div id="main_prizes">
-		<h1>Main Prizes</h1>
-		<h2>1st Place</h2>
-		<p>prize description</p>
-		<h2>2nd Place</h2>
-		<p>prize description</p>
-		<h2>3rd Place</h2>
-		<p>prize description</p>
-		<h2>Crowd Favorite</h2>
-		<p>prize description</p>
-	</div>
-	<div id="api_prizes">
-		<h1>API Prizes</h1>
+<!-- <div class="container section" id="prizes">
+	<div class="row" id="both-prizes">
+		<div class="col-xs-6 col-sm-6 col-md-6 text-center">	
+			
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+					<h1>Main Prizes</h1>
+				</div>
 
-		<div class="col-xs-12 col-md-6 api_prize">
-			<img src="images/fake_logo.png">
-			<p>prize description</p>
-			<img src="images/fake_logo.png">
-			<p>prize description</p>
-			<img src="images/fake_logo.png">
-			<p>prize description</p>
-			<img src="images/fake_logo.png">
-			<p>prize description</p>
+				<div class="col-xs-12 col-sm-12 col-md-12 text-center" id="main_prizes">
+					<h2>1st Place</h2>
+					<p>prize description</p>
+					<h2>2nd Place</h2>
+					<p>prize description</p>
+					<h2>3rd Place</h2>
+					<p>prize description</p>
+					<h2>Crowd Favorite</h2>
+					<p>prize description</p>
+				</div>
+
+			</div>
 		</div>
 
-		<div class="col-xs-12 col-md-6 api_prize">
-			<img src="images/fake_logo.png">
-			<p>prize description</p>
-			<img src="images/fake_logo.png">
-			<p>prize description</p>
-			<img src="images/fake_logo.png">
-			<p>prize description</p>
-			<img src="images/fake_logo.png">
-			<p>prize description</p>
+
+			<div class="col-xs-6 col-sm-6 col-md-6 text-center">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+						<h1>API Prizes</h1>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 text-center">
+						<img class="img-responsive" src="images/fake_logo.png">
+						<p>prize description</p>
+						<img class="img-responsive" src="images/fake_logo.png">
+						<p>prize description</p>
+						<img class="img-responsive" src="images/fake_logo.png">
+						<p>prize description</p>
+						<img class="img-responsive" src="images/fake_logo.png">
+						<p>prize description</p>
+					</div>
+
+					<div class="col-xs-6 col-sm-6 col-md-6 text-center">
+						<img class="img-responsive" src="images/fake_logo.png">
+						<p>prize description</p>
+						<img class="img-responsive" src="images/fake_logo.png">
+						<p>prize description</p>
+						<img class="img-responsive" src="images/fake_logo.png">
+						<p>prize description</p>
+						<img class="img-responsive" src="images/fake_logo.png">
+						<p>prize description</p>
+					</div>
+				</div>
+			</div>
+	</div><! end of row -->
+
+	
+<!-- </div>end of main prize container -->
+
+<div class="container section" id="schedule">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+			<h1>Schedule</h1>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 text-center">
+			<p><strong>9:00am</strong><br>Doors Open / Breakfast</p>
+			<p><strong>9:45am</strong><br>Keynote Speech</p>
+			<p><strong>10:00am</strong><br>API Presentations</p>
+			<p><strong>11:00am</strong><br>Start Hacking!</p>
+			<p><strong>12:30pm</strong><br>Lunch</p>
+		</div>
+		<div class="col-xs-6 col-sm-6 col-md-6 text-center">
+			<p><strong>6:30pm</strong><br>Dinner</p>
+			<p><strong>9pm</strong><br>Hack Submission Deadline</p>
+			<p><strong>9:30pm</strong><br>Hack Demos</p>
+			<p><strong>10:30pm</strong><br>Awards</p>
+			<p><strong>11:30pm</strong><br>Afterparty!</p>
+		</div>
+	</div>
+</div><!-- end schedule container -->
+
+<div class="container section" id="directions">
+
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+			<h1>Location</h1>
+			<p>General Assembly</br>
+			902 Broadway</br>
+			4th Floor</br>
+			New York, NY</p>
+		</div>
+	</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 text-center footer map-container">
+				<iframe width="500" height="300" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=General+Assembly+Broadway&key=AIzaSyBfSye1ShguadJWO3Xbo_0ofaiLe4jaOE4"></iframe>		
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 text-center">
+				<h3>&nbsp;</h3>
+			</div>
 		</div>
 
-	</div>
-</div>
 
-<div class="row" id="schedule">
-	<div id="schedule_content" class="text-center">
-		<h1>Schedule</h1>
-		<p><strong>9:00am</strong><br>Doors Open / Breakfast</p>
-		<p><strong>9:45am</strong><br>Keynote Speech</p>
-		<p><strong>10:00am</strong><br>API Presentations</p>
-		<p><strong>11:00am</strong><br>Start Hacking!</p>
-		<p><strong>12:30pm</strong><br>Lunch</p>
-		<p><strong>6:30pm</strong><br>Dinner</p>
-		<p><strong>9pm</strong><br>Hack Submission Deadline</p>
-		<p><strong>9:30pm</strong><br>Hack Demos</p>
-		<p><strong>10:30pm</strong><br>Awards</p>
-		<p><strong>11:30pm</strong><br>Afterparty!</p>
-	</div>
-</div>
+	</div><!-- end directions container -->
+</div><!-- end fullPage -->
 
-<div class="row" id="directions">
-	<div class="text-center">
-		<h1>Location</h1>
+<script>
+$('#home').on('mousewheel', function() {
+	$('.bounce').addClass('hide-me');
+});
+</script>
 		
-		<p>General Assembly<br>
-			902 Broadway<br> 
-			4th Floor<br>
-			New York, NY
-		</p>
-		
-		<div class="map-container">
-			<iframe width="500" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=General+Assembly+Broadway&key=AIzaSyBfSye1ShguadJWO3Xbo_0ofaiLe4jaOE4"></iframe>
-		</div>
-	</div>
+	
 
-</div>
+
