@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   root 'static_pages#home'
 
-  get 'participants'		=> 'static_pages#participants'
+  get 'hackers'		=> 'static_pages#participants'
   get 'sponsors'			=> 'static_pages#sponsors'
   get 'judges'				=> 'static_pages#judges'
 

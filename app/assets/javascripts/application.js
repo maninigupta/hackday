@@ -12,5 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.slimscroll.min
 //= require jquery.fullPage.min
 //= require_tree .
