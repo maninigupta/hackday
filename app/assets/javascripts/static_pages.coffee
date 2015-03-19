@@ -7,10 +7,6 @@ $(document).ready ->
 	$('#fullpage').fullpage({
 		scrollOverflow: true
 	});
-	
-	
-$(document).on('mousewheel') -> 
-	$('.bounce').addClass('hide-me')
 
 
 	# Home Page
@@ -24,8 +20,8 @@ $(document).on('mousewheel') ->
 
 
 
-	# Participants Page
-	else if window.location.pathname == "/participants"
+	# Hackers Page
+	else if window.location.pathname == "/hackers"
 		$('#participants-link').addClass('active')
 		setRecorderSlideDownEvent()
 

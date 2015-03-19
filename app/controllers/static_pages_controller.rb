@@ -3,8 +3,8 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def participants
-    @users = User.where(kind: 'participant')
+  def hackers
+    @users = User.where(kind: 'hacker')
     @new_user = User.new
   end
 
